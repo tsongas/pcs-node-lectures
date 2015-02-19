@@ -1,13 +1,15 @@
-var Larry = function() {
-  console.log('What\'s the idea?');
+var Larry = function(text) {
+  console.log('Larry: ' + text);
+  Curly('Nyuk Nyuk Nyuk!');
 };
 
-var Moe = function() {
-  console.log('Why I oughta...');
+var Moe = function(text) {
+  console.log('Moe: ' + text);
+  Curly('Oh, a wise guy, eh?');
 };
 
-var Curly = function() {
-  console.log('Nyuk Nyuk Nyuk!');
+var Curly = function(text) {
+  console.log('Curly: ' + text);
 };
 
 exports.Larry = Larry;
